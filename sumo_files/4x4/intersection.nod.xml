@@ -1,0 +1,18 @@
+<nodes>
+    <node id="A1" x="0" y="0" />
+    <node id="A2" x="300" y="0" />
+    <node id="A3" x="600" y="0" />
+    <node id="A4" x="900" y="0" />
+    <node id="B1" x="0" y="300" />
+    <node id="B2" x="300" y="300" type="traffic_light" />
+    <node id="B3" x="600" y="300" type="traffic_light" />
+    <node id="B4" x="900" y="300" />
+    <node id="C1" x="0" y="600" />
+    <node id="C2" x="300" y="600" type="traffic_light" />
+    <node id="C3" x="600" y="600" type="traffic_light" />
+    <node id="C4" x="900" y="600" />
+    <node id="D1" x="0" y="900" />
+    <node id="D2" x="300" y="900" />
+    <node id="D3" x="600" y="900" />
+    <node id="D4" x="900" y="900" />
+</nodes>

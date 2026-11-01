@@ -1,0 +1,11 @@
+{
+  "epsilon": 0.9703725093562657,
+  "total_actions": 6,
+  "states_learned": 1,
+  "q_table": {
+    "(0, 0, 0)": [
+      0.0,
+      0.0
+    ]
+  }
+}

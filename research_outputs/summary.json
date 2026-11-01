@@ -1,0 +1,11 @@
+{
+  "rl_wait_avg": 1.4074872862254062,
+  "fx_wait_avg": 2.0012649594348226,
+  "rl_queue_avg": 7.933333333333334,
+  "fx_queue_avg": 9.309166666666666,
+  "rl_throughput_per_step": 0.37666666666666665,
+  "fx_throughput_per_step": 0.37416666666666665,
+  "wait_improvement_pct": 29.670117912677853,
+  "queue_improvement_pct": 14.779339360845038,
+  "throughput_improvement_pct": 0.6681514476614705
+}

@@ -1,0 +1,7 @@
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="70"/>
+    <flow id="f1" type="car" from="A1_B1" to="C4_D4" begin="0" end="3600" number="100" />
+    <flow id="f2" type="car" from="D4_C4" to="B1_A1" begin="0" end="3600" number="100" />
+    <flow id="f3" type="car" from="A1_A2" to="D3_D4" begin="0" end="3600" number="100" />
+    <flow id="f4" type="car" from="D4_D3" to="A2_A1" begin="0" end="3600" number="100" />
+</routes>

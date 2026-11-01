@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUMO Node definitions for 4-way intersection -->
+<nodes>
+    <!-- Central intersection node -->
+    <node id="center" x="0" y="0" type="traffic_light"/>
+    
+    <!-- Incoming/Outgoing edges - placed 200m from center -->
+    <node id="north" x="0" y="200" type="priority"/>
+    <node id="south" x="0" y="-200" type="priority"/>
+    <node id="east" x="200" y="0" type="priority"/>
+    <node id="west" x="-200" y="0" type="priority"/>
+</nodes>

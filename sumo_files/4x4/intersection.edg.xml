@@ -1,0 +1,59 @@
+<edges>
+    <!-- Horizontal edges -->
+    <edge id="A1_B1" from="A1" to="B1" />
+    <edge id="B1_A1" from="B1" to="A1" />
+    <edge id="B1_C1" from="B1" to="C1" />
+    <edge id="C1_B1" from="C1" to="B1" />
+    <edge id="C1_D1" from="C1" to="D1" />
+    <edge id="D1_C1" from="D1" to="C1" />
+
+    <edge id="A2_B2" from="A2" to="B2" />
+    <edge id="B2_A2" from="B2" to="A2" />
+    <edge id="B2_C2" from="B2" to="C2" />
+    <edge id="C2_B2" from="C2" to="B2" />
+    <edge id="C2_D2" from="C2" to="D2" />
+    <edge id="D2_C2" from="D2" to="C2" />
+
+    <edge id="A3_B3" from="A3" to="B3" />
+    <edge id="B3_A3" from="B3" to="A3" />
+    <edge id="B3_C3" from="B3" to="C3" />
+    <edge id="C3_B3" from="C3" to="B3" />
+    <edge id="C3_D3" from="C3" to="D3" />
+    <edge id="D3_C3" from="D3" to="C3" />
+
+    <edge id="A4_B4" from="A4" to="B4" />
+    <edge id="B4_A4" from="B4" to="A4" />
+    <edge id="B4_C4" from="B4" to="C4" />
+    <edge id="C4_B4" from="C4" to="B4" />
+    <edge id="C4_D4" from="C4" to="D4" />
+    <edge id="D4_C4" from="D4" to="C4" />
+
+    <!-- Vertical edges -->
+    <edge id="A1_A2" from="A1" to="A2" />
+    <edge id="A2_A1" from="A2" to="A1" />
+    <edge id="A2_A3" from="A2" to="A3" />
+    <edge id="A3_A2" from="A3" to="A2" />
+    <edge id="A3_A4" from="A3" to="A4" />
+    <edge id="A4_A3" from="A4" to="A3" />
+
+    <edge id="B1_B2" from="B1" to="B2" />
+    <edge id="B2_B1" from="B2" to="B1" />
+    <edge id="B2_B3" from="B2" to="B3" />
+    <edge id="B3_B2" from="B3" to="B2" />
+    <edge id="B3_B4" from="B3" to="B4" />
+    <edge id="B4_B3" from="B4" to="B3" />
+
+    <edge id="C1_C2" from="C1" to="C2" />
+    <edge id="C2_C1" from="C2" to="C1" />
+    <edge id="C2_C3" from="C2" to="C3" />
+    <edge id="C3_C2" from="C3" to="C2" />
+    <edge id="C3_C4" from="C3" to="C4" />
+    <edge id="C4_C3" from="C4" to="C3" />
+
+    <edge id="D1_D2" from="D1" to="D2" />
+    <edge id="D2_D1" from="D2" to="D1" />
+    <edge id="D2_D3" from="D2" to="D3" />
+    <edge id="D3_D2" from="D3" to="D2" />
+    <edge id="D3_D4" from="D3" to="D4" />
+    <edge id="D4_D3" from="D4" to="D3" />
+</edges>

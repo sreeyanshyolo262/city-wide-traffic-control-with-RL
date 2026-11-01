@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUMO Traffic Light Program -->
+<additional>
+    <tlLogic id="center" type="static" programID="rl_controlled" offset="0">
+        <!-- Phase 0: NS Green (North-South through and right turns) -->
+        <phase duration="30" state="GGGrrrGGGrrr"/>
+        <!-- Phase 1: NS Yellow -->
+        <phase duration="3" state="yyyrrryyyrrr"/>
+        <!-- Phase 2: EW Green (East-West through and right turns) -->
+        <phase duration="30" state="rrrGGGrrrGGG"/>
+        <!-- Phase 3: EW Yellow -->
+        <phase duration="3" state="rrryyyrrryyy"/>
+    </tlLogic>
+</additional>

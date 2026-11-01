@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUMO Configuration File -->
+<configuration>
+    <input>
+        <net-file value="intersection.net.xml"/>
+        <route-files value="intersection.rou.xml"/>
+    </input>
+    
+    <time>
+        <begin value="0"/>
+        <end value="100000"/>
+        <step-length value="1.0"/>
+    </time>
+    
+    <processing>
+        <time-to-teleport value="-1"/>
+        <collision.action value="warn"/>
+    </processing>
+    
+    <gui_only>
+        <gui-settings-file value="gui_settings.xml"/>
+    </gui_only>
+</configuration>

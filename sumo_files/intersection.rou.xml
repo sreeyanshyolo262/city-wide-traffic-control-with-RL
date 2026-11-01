@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUMO Route definitions with turning movements -->
+<routes>
+    <!-- Vehicle Types -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="13.89" guiShape="passenger"/>
+    <vType id="car_white" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="13.89" guiShape="passenger" color="1,1,1"/>
+    <vType id="car_black" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="13.89" guiShape="passenger" color="0.1,0.1,0.1"/>
+    <vType id="car_red" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="13.89" guiShape="passenger" color="0.8,0.1,0.1"/>
+    <vType id="car_blue" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="13.89" guiShape="passenger" color="0.1,0.2,0.6"/>
+    <vType id="car_silver" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="13.89" guiShape="passenger" color="0.7,0.7,0.75"/>
+    
+    <!-- Routes: From each direction with all turning movements -->
+    <!-- From South (Northbound) -->
+    <route id="south_left" edges="south_to_center center_to_west"/>
+    <route id="south_straight" edges="south_to_center center_to_north"/>
+    <route id="south_right" edges="south_to_center center_to_east"/>
+    
+    <!-- From North (Southbound) -->
+    <route id="north_left" edges="north_to_center center_to_east"/>
+    <route id="north_straight" edges="north_to_center center_to_south"/>
+    <route id="north_right" edges="north_to_center center_to_west"/>
+    
+    <!-- From West (Eastbound) -->
+    <route id="west_left" edges="west_to_center center_to_south"/>
+    <route id="west_straight" edges="west_to_center center_to_east"/>
+    <route id="west_right" edges="west_to_center center_to_north"/>
+    
+    <!-- From East (Westbound) -->
+    <route id="east_left" edges="east_to_center center_to_north"/>
+    <route id="east_straight" edges="east_to_center center_to_west"/>
+    <route id="east_right" edges="east_to_center center_to_south"/>
+    
+    <!-- Traffic Flows - CONTINUOUS for long training runs -->
+    <!-- Medium density flows: approximately 400 veh/hour per approach -->
+    <!-- end="100000" = ~27 hours of continuous traffic -->
+    
+    <!-- Northbound flows (from south) - 60% straight, 20% left, 20% right -->
+    <flow id="flow_south_straight" route="south_straight" begin="0" end="100000" probability="0.08" type="car" departLane="1"/>
+    <flow id="flow_south_left" route="south_left" begin="0" end="100000" probability="0.025" type="car_blue" departLane="0"/>
+    <flow id="flow_south_right" route="south_right" begin="0" end="100000" probability="0.025" type="car_silver" departLane="2"/>
+    
+    <!-- Southbound flows (from north) -->
+    <flow id="flow_north_straight" route="north_straight" begin="0" end="100000" probability="0.08" type="car_white" departLane="1"/>
+    <flow id="flow_north_left" route="north_left" begin="0" end="100000" probability="0.025" type="car_red" departLane="0"/>
+    <flow id="flow_north_right" route="north_right" begin="0" end="100000" probability="0.025" type="car" departLane="2"/>
+    
+    <!-- Eastbound flows (from west) -->
+    <flow id="flow_west_straight" route="west_straight" begin="0" end="100000" probability="0.08" type="car_black" departLane="1"/>
+    <flow id="flow_west_left" route="west_left" begin="0" end="100000" probability="0.025" type="car" departLane="0"/>
+    <flow id="flow_west_right" route="west_right" begin="0" end="100000" probability="0.025" type="car_blue" departLane="2"/>
+    
+    <!-- Westbound flows (from east) -->
+    <flow id="flow_east_straight" route="east_straight" begin="0" end="100000" probability="0.08" type="car_silver" departLane="1"/>
+    <flow id="flow_east_left" route="east_left" begin="0" end="100000" probability="0.025" type="car_white" departLane="0"/>
+    <flow id="flow_east_right" route="east_right" begin="0" end="100000" probability="0.025" type="car_red" departLane="2"/>
+</routes>

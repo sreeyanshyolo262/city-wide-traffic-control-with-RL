@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUMO GUI Settings for realistic satellite-like view -->
+<viewsettings>
+    <scheme name="real world">
+        <background backgroundColor="0.29,0.41,0.24" showGrid="0"/>
+    </scheme>
+    <viewport x="0" y="0" zoom="500"/>
+    <delay value="50"/>
+    <decals>
+        <!-- You can add satellite imagery here if you have it -->
+    </decals>
+</viewsettings>
